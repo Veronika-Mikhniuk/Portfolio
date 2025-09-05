@@ -1,0 +1,52 @@
+@use 'variables' as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  
+
+  &__logo {
+    font-size: 30px;
+    font-weight: 800;
+    background: $pastel-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__nav {
+    a {
+      color: $text-color;
+      text-decoration: none;
+      margin: 0 15px;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+
+  &__features {
+    display: flex;
+    align-items: center;
+
+    .header__lang-switch,
+    .header__theme-switch {
+      background: none;
+      border: none;
+      color: $text-color;
+      cursor: pointer;
+      margin-left: 15px;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+// Colors
+$dark-bg: #1a1a1a;
+$text-color: #fff;
+$hover-color: #c38fff;
+$pastel-gradient: linear-gradient(45deg, #ffb07c, #ff8ac4, #c38fff);
+
+//Fonts
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/open-sans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/open-sans/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/open-sans/OpenSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../assets/fonts/fira-code/FiraCode-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../assets/fonts/fira-code/FiraCode-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../assets/fonts/fira-code/FiraCode-Bold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+$font-primary: 'Open Sans', sans-serif;
+$font-code: 'Fira Code', monospace;
