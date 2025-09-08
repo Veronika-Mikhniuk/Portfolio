@@ -21,6 +21,13 @@ $pastel-gradient: linear-gradient(45deg, #ffb07c, #ff8ac4, #c38fff);
 
 @font-face {
   font-family: 'Open Sans';
+  src: url('../assets/fonts/open-sans/OpenSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
   src: url('../assets/fonts/open-sans/OpenSans-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
