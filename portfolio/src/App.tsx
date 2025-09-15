@@ -1,6 +1,7 @@
 import './styles/app.scss'
 import { Header } from './components/Header'
 import { About } from './components/About'
+import { Skills } from './components/Skills'
 
 function App() {
   
@@ -8,6 +9,7 @@ function App() {
     <>
     <Header></Header>
     <About />
+    <Skills />
     </>
   )
 }

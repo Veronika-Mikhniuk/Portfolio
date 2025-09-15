@@ -9,8 +9,8 @@
         font-size: 25px;
         color: $text-color;
         margin-bottom: 20px;
-        overflow: hidden; // Для typewriter
-        white-space: nowrap; // Для typewriter
+        overflow: hidden;
+        white-space: nowrap;
         animation: type 2s steps(40, end) forwards;
     }
 

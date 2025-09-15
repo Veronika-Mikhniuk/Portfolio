@@ -27,7 +27,7 @@ export function About() {
                 >
                     <motion.h1
                         className="about__role-part1"
-                        initial={{ x: -200, opacity: 0 }}
+                        initial={{ x: -100, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 1.3, delay: 0 }}
                     >
@@ -35,7 +35,7 @@ export function About() {
                     </motion.h1>
                     <motion.h1
                         className="about__role-part2"
-                        initial={{ x: 200, opacity: 0 }}
+                        initial={{ x: 100, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 1.3, delay: 0 }}
                     >
@@ -50,7 +50,7 @@ export function About() {
                 >
                     <motion.button
                         className="about__projects-button"
-                        initial={{ x: 100, opacity: 0 }}
+                        initial={{ x: 50, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 1.3, ease: "easeInOut", delay: 0 }}
                     >

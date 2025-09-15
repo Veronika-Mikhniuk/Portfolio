@@ -1,0 +1,116 @@
+@use 'variables' as *;
+
+.skills {
+    padding: 40px 0 400px;
+    transition: all 0.7s ease;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__list {
+        flex: 0 0 43%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__title {
+        margin: 40px 0;
+        font-family: $font-code;
+        font-size: 36px;
+        font-weight: 600;
+        font-style: italic;
+        color: $text-color;
+        text-align: start;
+    }
+
+    &__item {
+        border: 1px solid transparent;
+        border-radius: 30px;
+        padding: 25px 30px;
+        max-width: 550px;
+        background: linear-gradient($dark-bg, $dark-bg) padding-box,
+            $pastel-gradient border-box;
+        transition: transform 0.7s ease;
+        box-shadow: 0 4px 15px rgba(195, 143, 255, 0.164);
+
+        &:hover {
+            box-shadow: 0 4px 15px rgba(195, 143, 255, 0.3);
+            transform: scale(1.01) !important;
+        }
+    }
+
+    &__type {
+        font-family: $font-primary;
+        font-size: 20px;
+        font-weight: 400;
+        color: $text-color;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-family: $font-code;
+        font-size: 14px;
+        font-weight: 400;
+        color: $text-color;
+        line-height: 30px;
+        width: 100%;
+        white-space: normal;
+    }
+
+    &__visual {
+        flex: 0 0 50%;
+        position: relative;
+    }
+
+
+}
+
+.visual {
+    position: relative;
+    &__accent-spot {
+        position: absolute;
+        left: 50%;
+        top: 270px;
+        width: 830px;
+        height: 670px;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+
+    &__vector1 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 370px;
+        z-index: 3;
+        animation: pulse 6s ease-in-out infinite;
+    }
+
+    &__vector2 {
+        position: absolute;
+        left: 10px;
+        top: 80px;
+        height: 270px;
+        z-index: 1;
+        animation: pulse 5s ease-in-out infinite;
+    }
+
+    &__vector3 {
+        position: absolute;
+        left: 100px;
+        top: 220px;
+        height: 270px;
+        z-index: 2;
+        animation: pulse 4s ease-in-out infinite;
+    }
+}
+
+// Animations
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
